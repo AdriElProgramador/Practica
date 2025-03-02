@@ -1,17 +1,24 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package cuentas;
 
-
+/**
+ * @author Alguien
+ * @version 1.0
+ * @since 1.0
+ */
 public class Main {
 
+    /**
+     * Método main del proyecto
+     * @param args 
+     */
     public static void main(String[] args) {
         operativa_cuenta(2500);
     }
 
+    /**
+     * Crea un objeto cuenta y llama a varios de sus métodos para demostrar su funcionamiento
+     * @param cantidad 
+     */
     private static void operativa_cuenta(float cantidad) {
         CCuenta cuenta1;
         double saldoActual;
