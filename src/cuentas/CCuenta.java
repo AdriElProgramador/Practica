@@ -1,11 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package cuentas;
 
-
+/**
+ * @author Alguien
+ * @version 1.0
+ * @since 1.0
+ */
 public class CCuenta {
 
 
@@ -19,6 +18,13 @@ public class CCuenta {
     {
     }
 
+    /**
+     * Crea una objeto cuenta con el nombre, número de cuenta, saldo y tipo de interés indicado.
+     * @param nom
+     * @param cue
+     * @param sal
+     * @param tipo 
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -26,23 +32,32 @@ public class CCuenta {
         saldo=sal;
     }
 
+    /**
+     * Cambia el nombre de la cuenta
+     * @param nom 
+     */
     public void asignarNombre(String nom)
     {
         setNombre(nom);
     }
 
+    /**
+     * @return el nombre de la cuenta
+     */
     public String obtenerNombre()
     {
         return getNombre();
     }
 
-
+    /**
+     * @return el saldo de la cuenta
+     */
     public double estado()
     {
         return getSaldo();
     }
 
-
+    
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
